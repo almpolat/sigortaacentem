@@ -198,6 +198,7 @@
         const mesaj = `Yeni Teklif Talebi: ${ad} - ${tel} - ${tur}`;
         const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mesaj)}`;
         window.open(waUrl, '_blank', 'noopener');
+        fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:'b06bf2f6-894b-4ff2-9438-2a8ffe41f348',subject:'Genel Teklif Talebi - Web Sitesi',from_name:ad,phone:tel,message:mesaj})}).catch(()=>{});
         quoteForm.classList.add('hidden');
         quoteSuccess.classList.remove('hidden');
       });
