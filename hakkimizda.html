@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sigortopya'nın hikayesi, vizyonu, misyonu ve değerleri. Sigortayı sade, hızlı ve samimi bir deneyime dönüştürüyoruz.">
+  <title>Hakkımızda | Sigortopya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            forest: { 950:'#071A19', 900:'#0B2422', 800:'#10312E', 700:'#17443F' },
+            mint: { 300:'#8BE8D2', 400:'#54D9BA', 500:'#2FC7A7' },
+            sand: { 50:'#FBFAF6', 100:'#F4F1E9', 200:'#E7E0D2', 300:'#D4C8B3' },
+            gold: '#C5A46D', ink: '#102321'
+          },
+          fontFamily: { sans:['Manrope','sans-serif'], display:['Sora','sans-serif'] },
+          boxShadow: { soft:'0 24px 70px -32px rgba(7,26,25,.28)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    html{scroll-behavior:smooth} body{background:#FBFAF6;color:#102321}
+    .paper-grid{background-image:linear-gradient(rgba(16,49,46,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(16,49,46,.055) 1px,transparent 1px);background-size:28px 28px}
+    .grain{position:relative}.grain:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.18;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.12'/%3E%3C/svg%3E")}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}.reveal.is-visible{opacity:1;transform:none}
+    .product-card{transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}.product-card:hover{transform:translateY(-7px);box-shadow:0 28px 70px -34px rgba(7,26,25,.4);border-color:#54D9BA}
+    a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #54D9BA;outline-offset:3px}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.product-card{transition:none}.product-card:hover{transform:none}}
+  </style>
+</head>
+<body class="font-sans text-ink antialiased">
+<header class="sticky top-0 z-50 border-b border-white/10 bg-forest-950/95 text-white backdrop-blur-xl">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-10">
+      <a href="index.html" class="flex items-center gap-3" aria-label="Sigortopya ana sayfa">
+        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 2.5 31 7.7v9.1c0 8.7-5.7 15-13 16.7C10.7 31.8 5 25.5 5 16.8V7.7L18 2.5Z" fill="#10312E" stroke="#54D9BA" stroke-width="2"/><path d="m11.5 18 4.2 4.1 8.8-9" stroke="#54D9BA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="font-display text-[15px] font-semibold tracking-tight sm:text-lg">Sigort<span class="text-mint-400">opya</span></span>
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-semibold text-white/70 lg:flex" aria-label="Ana menü">
+        <a href="index.html" class="text-white transition-colors hover:text-mint-300">Ana Sayfa</a>
+        <div class="group relative">
+          <button type="button" class="flex items-center gap-1.5 py-6 transition-colors hover:text-mint-300" aria-haspopup="true">
+            Kurumsal
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="transition-transform duration-200 group-hover:rotate-180"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="invisible absolute left-0 top-full w-56 translate-y-1 rounded-2xl border border-white/10 bg-forest-900 p-3 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+            <a href="hakkimizda.html" class="block rounded-xl px-4 py-2.5 text-sm text-white/75 hover:bg-white/5 hover:text-white">Hakkımızda</a>
+            <a href="hakkimizda.html#vizyon-misyon" class="block rounded-xl px-4 py-2.5 text-sm text-white/75 hover:bg-white/5 hover:text-white">Vizyon &amp; Misyon</a>
+            <a href="hakkimizda.html#degerlerimiz" class="block rounded-xl px-4 py-2.5 text-sm text-white/75 hover:bg-white/5 hover:text-white">Değerlerimiz</a>
+          </div>
+        </div>
+        <div class="group relative">
+          <button type="button" class="flex items-center gap-1.5 py-6 transition-colors hover:text-mint-300" aria-haspopup="true">
+            Sigorta Ürünleri
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="transition-transform duration-200 group-hover:rotate-180"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="invisible absolute left-1/2 top-full w-[560px] -translate-x-1/2 translate-y-1 rounded-2xl border border-white/10 bg-forest-900 p-7 opacity-0 shadow-2xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+            <div class="grid grid-cols-3 gap-6">
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-[.18em] text-mint-300">Araç Sigortaları</p>
+                <a href="trafik.html" class="mt-3 block text-sm text-white/75 hover:text-white">Trafik Sigortası</a>
+                <a href="kasko.html" class="mt-2.5 block text-sm text-white/75 hover:text-white">Kasko</a>
+              </div>
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-[.18em] text-mint-300">Sağlık &amp; Seyahat</p>
+                <a href="saglik.html" class="mt-3 block text-sm text-white/75 hover:text-white">Tamamlayıcı Sağlık</a>
+                <a href="seyahat.html" class="mt-2.5 block text-sm text-white/75 hover:text-white">Seyahat Sigortası</a>
+              </div>
+              <div>
+                <p class="text-[10px] font-bold uppercase tracking-[.18em] text-mint-300">Konut &amp; İşyeri</p>
+                <a href="konut.html" class="mt-3 block text-sm text-white/75 hover:text-white">Konut / DASK</a>
+                <a href="isyeri.html" class="mt-2.5 block text-sm text-white/75 hover:text-white">İşyeri Sigortası</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#iletisim" class="transition-colors hover:text-mint-300">İletişim</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <a href="#teklif-form" class="hidden rounded-full bg-mint-400 px-5 py-2.5 text-sm font-bold text-forest-950 transition hover:bg-mint-300 sm:inline-flex">Teklif Al</a>
+        <button id="menuButton" class="rounded-full border border-white/15 p-2.5 lg:hidden" aria-label="Menüyü aç" aria-expanded="false"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+    <nav id="mobileMenu" class="hidden border-t border-white/10 bg-forest-950 px-5 py-5 text-sm font-semibold text-white/75 lg:hidden" aria-label="Mobil menü">
+      <div class="mx-auto grid max-w-7xl gap-1">
+        <a href="index.html" class="rounded-xl bg-white/5 px-4 py-3 text-white">Ana Sayfa</a>
+        <p class="mt-2 px-4 text-[10px] font-bold uppercase tracking-[.18em] text-white/35">Kurumsal</p>
+        <a href="hakkimizda.html" class="rounded-xl px-4 py-3 hover:bg-white/5">Hakkımızda</a>
+        <a href="hakkimizda.html#vizyon-misyon" class="rounded-xl px-4 py-3 hover:bg-white/5">Vizyon &amp; Misyon</a>
+        <a href="hakkimizda.html#degerlerimiz" class="rounded-xl px-4 py-3 hover:bg-white/5">Değerlerimiz</a>
+        <p class="mt-2 px-4 text-[10px] font-bold uppercase tracking-[.18em] text-white/35">Sigorta Ürünleri</p>
+        <a href="trafik.html" class="rounded-xl px-4 py-3 hover:bg-white/5">Trafik Sigortası</a>
+        <a href="kasko.html" class="rounded-xl px-4 py-3 hover:bg-white/5">Kasko</a>
+        <a href="saglik.html" class="rounded-xl px-4 py-3 hover:bg-white/5">Tamamlayıcı Sağlık</a>
+        <a href="seyahat.html" class="rounded-xl px-4 py-3 hover:bg-white/5">Seyahat Sigortası</a>
+        <a href="konut.html" class="rounded-xl px-4 py-3 hover:bg-white/5">Konut / DASK</a>
+        <a href="isyeri.html" class="rounded-xl px-4 py-3 hover:bg-white/5">İşyeri Sigortası</a>
+        <a href="#iletisim" class="mt-2 rounded-xl px-4 py-3 hover:bg-white/5">İletişim</a>
+      </div>
+    </nav>
+  </header>
+
+<main>
+  <section class="grain overflow-hidden bg-forest-950 text-white">
+    <div class="mx-auto max-w-4xl px-5 py-16 text-center lg:px-10 lg:py-24">
+      <span class="text-xs font-bold uppercase tracking-[.2em] text-mint-300">Kurumsal</span>
+      <h1 class="mt-4 font-display text-3xl font-semibold tracking-[-.03em] sm:text-5xl">Sıradan bir sigorta acentesi değiliz.</h1>
+      <p class="mt-5 text-base leading-8 text-white/60 sm:text-lg">Sigortopya, sigortayı karmaşık evraklardan çıkarıp anlaşılır, hızlı ve samimi bir deneyime dönüştürmek için kuruldu.</p>
+    </div>
+  </section>
+
+  <section id="hakkimizda" class="px-5 py-16 lg:px-10 lg:py-24">
+    <div class="mx-auto grid max-w-6xl gap-14 lg:grid-cols-[1.1fr_.9fr] lg:items-start">
+      <div class="reveal">
+        <span class="text-xs font-bold uppercase tracking-[.2em] text-forest-700">Hakkımızda</span>
+        <h2 class="mt-3 font-display text-2xl font-semibold tracking-[-.03em] text-ink sm:text-3xl">Bir stajdan doğan farklı bir bakış açısı</h2>
+        <div class="mt-6 space-y-5 text-base leading-8 text-ink/65">
+          <p>Sigortopya, İstanbul'da bir sigorta acentesinde stajyer olarak çalışırken doğdu. Poliçe karşılaştırmalarının hâlâ kalın dosyalar, uzun telefon trafiği ve karışık formlarla yürütüldüğünü gördük — ve bunun bugünün beklentisiyle örtüşmediğine karar verdik.</p>
+          <p>Kurucumuz aslen <strong class="text-ink">bilgisayar</strong> kökenli — yani bu işi yalnızca sigortacı gözüyle değil, teknik ve sistemli bir bakış açısıyla da kuruyor. Bu da Sigortopya'yı klasik acente alışkanlıklarından uzak, dijital doğumlu bir ekip yapıyor: formlar sade, süreç WhatsApp kadar hızlı, dilimiz hiç bürokratik değil.</p>
+          <p>Küçük ölçekli başladık ama büyük bir iddiamız var: sigortayı, insanların anlamadan imzaladığı bir evrak olmaktan çıkarıp gerçekten güvendikleri bir karar hâline getirmek.</p>
+        </div>
+      </div>
+
+      <div class="reveal relative pl-4">
+        <div class="rotate-[-2deg] rounded-[1.7rem] bg-mint-400 p-7 text-forest-950 shadow-2xl sm:p-8">
+          <p class="text-[10px] font-bold uppercase tracking-[.22em]">Kurucudan Not</p>
+          <p class="mt-4 font-display text-lg font-semibold leading-snug sm:text-xl">"Sigortayı zorunlu bir evrak işi değil, doğru zamanda yanınızda olan bir arkadaş gibi düşünüyorum. Sorularınızı cevapsız bırakmıyoruz, sizi oyalamıyoruz."</p>
+          <p class="mt-5 text-sm font-semibold text-forest-950/70">— Kurucu, Sigortopya</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="vizyon-misyon" class="bg-sand-100 px-5 py-16 lg:px-10 lg:py-24">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal max-w-2xl">
+        <span class="text-xs font-bold uppercase tracking-[.2em] text-forest-700">Vizyon &amp; Misyon</span>
+        <h2 class="mt-3 font-display text-2xl font-semibold tracking-[-.03em] text-ink sm:text-3xl">Nereye gidiyoruz, neden yola çıktık</h2>
+      </div>
+
+      <div class="mt-10 grid gap-6 sm:grid-cols-2">
+        <div class="reveal rounded-[1.8rem] border border-sand-200 bg-white p-8 shadow-soft">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-forest-900 text-mint-300"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h3 class="mt-5 font-display text-xl font-semibold text-ink">Vizyonumuz</h3>
+          <p class="mt-3 text-sm leading-7 text-ink/60">Türkiye'de insanların sigortayı yalnızca zorunlu olduğunda değil, güvendikleri için ilk tercih ettiği; ihtiyaç duydukları her an akıllarına gelen ilk isim olmak.</p>
+        </div>
+        <div class="reveal rounded-[1.8rem] border border-sand-200 bg-white p-8 shadow-soft">
+          <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-forest-900 text-mint-300"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 3 7v6c0 5 4 8.5 9 9 5-.5 9-4 9-9V7l-9-5Z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3 class="mt-5 font-display text-xl font-semibold text-ink">Misyonumuz</h3>
+          <p class="mt-3 text-sm leading-7 text-ink/60">Onlarca teklif arasında kaybolmadan, gerçekten ihtiyacınıza uygun teminatı bulmanızı sağlamak; süreci sadeleştirip her adımda gerçek bir insan olarak yanınızda olmak.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="degerlerimiz" class="px-5 py-16 lg:px-10 lg:py-24">
+    <div class="mx-auto max-w-6xl">
+      <div class="reveal max-w-2xl">
+        <span class="text-xs font-bold uppercase tracking-[.2em] text-forest-700">Değerlerimiz</span>
+        <h2 class="mt-3 font-display text-2xl font-semibold tracking-[-.03em] text-ink sm:text-3xl">Bizi biz yapan beş şey</h2>
+      </div>
+
+      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="reveal rounded-[1.7rem] border border-sand-200 bg-white p-7">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-mint-400/15 text-forest-700"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span>
+          <h3 class="mt-4 font-display text-lg font-semibold text-ink">Şeffaflık</h3>
+          <p class="mt-2 text-sm leading-6 text-ink/55">Küçük puntoda gizli şartlar yok. Ne karşılıyor, ne karşılamıyor, baştan söylüyoruz.</p>
+        </div>
+        <div class="reveal rounded-[1.7rem] border border-sand-200 bg-white p-7">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-mint-400/15 text-forest-700"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></svg></span>
+          <h3 class="mt-4 font-display text-lg font-semibold text-ink">Hız</h3>
+          <p class="mt-2 text-sm leading-6 text-ink/55">Teklif için günler değil dakikalar. WhatsApp'tan yazın, aynı gün dönüş alın.</p>
+        </div>
+        <div class="reveal rounded-[1.7rem] border border-sand-200 bg-white p-7">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-mint-400/15 text-forest-700"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span>
+          <h3 class="mt-4 font-display text-lg font-semibold text-ink">Merak</h3>
+          <p class="mt-2 text-sm leading-6 text-ink/55">Sektörü sorgulamaktan çekinmiyoruz. Her yeni ürünü, her değişen mevzuatı öğrenip size aktarıyoruz.</p>
+        </div>
+        <div class="reveal rounded-[1.7rem] border border-sand-200 bg-white p-7">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-mint-400/15 text-forest-700"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 20l1.1-5.3A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg></span>
+          <h3 class="mt-4 font-display text-lg font-semibold text-ink">Samimiyet</h3>
+          <p class="mt-2 text-sm leading-6 text-ink/55">Sigorta dili karışık olabilir, ilişkimiz olmamalı. Sorularınızı sade bir dille yanıtlıyoruz.</p>
+        </div>
+        <div class="reveal rounded-[1.7rem] border border-sand-200 bg-white p-7">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-mint-400/15 text-forest-700"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5.2 3.4 9.4 8 10.5 4.6-1.1 8-5.3 8-10.5V6l-8-4Z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <h3 class="mt-4 font-display text-lg font-semibold text-ink">Güvenilirlik</h3>
+          <p class="mt-2 text-sm leading-6 text-ink/55">Söz verdiğimiz zamanda döneriz. Unutmayız, oyalamayız, laf gevelemeyiz.</p>
+        </div>
+        <div class="reveal rounded-[1.7rem] bg-forest-900 p-7 text-white">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-mint-400/15 text-mint-300"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span>
+          <h3 class="mt-4 font-display text-lg font-semibold">Bir sonraki adım sizde</h3>
+          <p class="mt-2 text-sm leading-6 text-white/55">Sorularınız mı var? Direkt yazın, gerçek biri cevap versin.</p>
+          <a href="index.html#teklif-form" class="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-mint-300 hover:text-mint-200">Hemen İletişime Geç
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="iletisim" class="bg-forest-950 text-white/70">
+    <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-5 py-12 sm:flex-row sm:items-center lg:px-10 lg:py-14">
+      <div><div class="flex items-center gap-3"><svg width="32" height="32" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 2.5 31 7.7v9.1c0 8.7-5.7 15-13 16.7C10.7 31.8 5 25.5 5 16.8V7.7L18 2.5Z" fill="#10312E" stroke="#54D9BA" stroke-width="2"/><path d="m11.5 18 4.2 4.1 8.8-9" stroke="#54D9BA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="font-display text-lg font-semibold text-white">Sigort<span class="text-mint-400">opya</span></span></div><p class="mt-3 text-sm text-white/40">Tüm hakları saklıdır. © 2026</p><a href="kvkk.html" class="mt-1 inline-block text-sm text-white/40 underline hover:text-mint-300">KVKK Aydınlatma Metni</a><a href="mailto:info@sigortopya.com" class="mt-1 flex items-center gap-1.5 text-sm text-white/40 hover:text-mint-300"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>info@sigortopya.com</a></div>
+      <a href="https://wa.me/905495750007?text=Merhaba%2C%20sigorta%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişime geç" class="group inline-flex items-center gap-3 rounded-full bg-[#25D366] px-5 py-3 text-sm font-bold text-forest-950 transition hover:-translate-y-0.5 hover:bg-[#2BE06D]"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.6 14.3c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.2-3.6-.8-3-1.2-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3 0-1.4.7-2.1 1-2.4.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.5.8 1.9.8 2 .1.2.1.4 0 .6-.1.2-.2.3-.4.5-.2.2-.4.4-.5.6-.2.2-.4.4-.2.7.2.4 1 1.6 2.1 2.6 1.4 1.3 2.6 1.7 3 1.9.4.2.6.1.8-.1.2-.2.9-1 1.1-1.4.2-.4.5-.3.8-.2.3.1 2 1 2.4 1.1.4.2.6.3.7.5.1.2.1.9-.1 1.6Z"/></svg>WhatsApp ile İletişime Geç</a>
+    </div>
+  </footer>
+<script>const menuButton=document.getElementById('menuButton');const mobileMenu=document.getElementById('mobileMenu');menuButton.addEventListener('click',()=>{const hidden=mobileMenu.classList.toggle('hidden');menuButton.setAttribute('aria-expanded',String(!hidden))});mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{mobileMenu.classList.add('hidden');menuButton.setAttribute('aria-expanded','false')}));const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-visible');observer.unobserve(entry.target)}}),{threshold:.1});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));</script>
+</body>
+</html>
