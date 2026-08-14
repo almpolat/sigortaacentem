@@ -304,11 +304,6 @@
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </button>
             </form>
-            <div id="quoteSuccess" class="hidden py-6 text-center">
-              <div class="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-mint-400/15"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#54D9BA" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg></div>
-              <h3 class="font-display text-lg font-semibold text-white">Talebiniz alındı</h3>
-              <p class="mt-1.5 text-sm text-white/50">WhatsApp'ta hazır mesajınızı açtık, göndermeyi unutmayın.</p>
-            </div>
           </div>
         </div>
       </div>
@@ -328,7 +323,6 @@
     // Teklif formu -> WhatsApp'a hazır mesaj olarak gönderir
     const WHATSAPP_NUMBER = '905495750007';
     const quoteForm = document.getElementById('quoteForm');
-    const quoteSuccess = document.getElementById('quoteSuccess');
     if (quoteForm) {
       quoteForm.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -341,8 +335,7 @@
         const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mesaj)}`;
         window.open(waUrl, '_blank', 'noopener');
         fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({access_key:'b06bf2f6-894b-4ff2-9438-2a8ffe41f348',subject:'Genel Teklif Talebi - Web Sitesi',from_name:ad,phone:tel,message:mesaj})}).catch(()=>{});
-        quoteForm.classList.add('hidden');
-        quoteSuccess.classList.remove('hidden');
+        window.location.href = 'tesekkur.html?urun=' + encodeURIComponent(tur);
       });
     }
   </script>
