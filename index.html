@@ -63,7 +63,11 @@
     .hero-photo{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:heroPhotoCycle 15s ease-in-out infinite}
     .hero-photo:nth-child(2){animation-delay:5s}
     .hero-photo:nth-child(3){animation-delay:10s}
-    details summary::-webkit-details-marker{display:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.product-card{transition:none}.product-card:hover{transform:none}.sticker{animation:none}.hero-photo{animation:none;opacity:0}.hero-photo:nth-child(1){opacity:1}}
+    @keyframes heroTitleCycle{0%,27%{opacity:1}33%,94%{opacity:0}100%{opacity:1}}
+    .hero-title{grid-area:1/1;opacity:0;animation:heroTitleCycle 12s ease-in-out infinite}
+    .hero-title:nth-child(2){animation-delay:4s}
+    .hero-title:nth-child(3){animation-delay:8s}
+    details summary::-webkit-details-marker{display:none}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.product-card{transition:none}.product-card:hover{transform:none}.sticker{animation:none}.hero-photo{animation:none;opacity:0}.hero-photo:nth-child(1){opacity:1}.hero-title{animation:none;opacity:0}.hero-title:nth-child(1){opacity:1}}
   </style>
 </head>
 <body class="font-sans antialiased selection:bg-mint-300 selection:text-forest-950">
@@ -186,11 +190,10 @@
       <div class="relative mx-auto grid max-w-7xl gap-14 px-5 py-20 lg:grid-cols-[1.12fr_.88fr] lg:px-10 lg:py-28">
         <div class="reveal self-center">
           <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-mint-400/25 bg-mint-400/10 px-3.5 py-1.5 text-xs font-bold uppercase tracking-[.18em] text-mint-300"><span class="h-1.5 w-1.5 rounded-full bg-mint-400"></span> Poliçeden önce doğru plan</div>
-          <h1 class="max-w-3xl font-display text-4xl font-semibold leading-[1.08] tracking-[-.04em] sm:text-6xl lg:text-[4.45rem]">Riskleri değil,<br><span class="text-mint-400">seçenekleri</span> görün.</h1>
+          <h1 class="grid max-w-3xl font-display text-4xl font-semibold leading-[1.08] tracking-[-.04em] sm:text-6xl lg:text-[4.45rem]"><span class="hero-title">Riskleri değil,<br><span class="text-mint-400">seçenekleri</span> görün.</span><span class="hero-title">13 şirketi karşılaştırıyoruz,<br><span class="text-mint-400">en uygun teklifi</span> buluyoruz.</span><span class="hero-title">7/24 hasar desteğiyle,<br><span class="text-mint-400">her zaman yanınızdayız.</span></span></h1>
           <p class="mt-7 max-w-xl text-base leading-8 text-white/62 sm:text-lg">Kasko, trafik ve tamamlayıcı sağlık sigortasında kapsamları anlaşılır hale getiriyor; ihtiyacınıza uygun poliçeyi karşılaştırmalı bir planla sunuyoruz.</p>
           <div class="mt-9 flex flex-col gap-3 sm:flex-row"><a href="#urunler" class="inline-flex items-center justify-center gap-2 rounded-full bg-mint-400 px-6 py-3.5 text-sm font-bold text-forest-950 transition hover:bg-mint-300">Ürünleri İncele <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a href="#teklif-form" class="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3.5 text-sm font-bold text-white transition hover:border-mint-400/60 hover:bg-white/5">Danışmana Yazın</a></div>
           <div class="mt-12 grid max-w-xl grid-cols-3 border-t border-white/10 pt-7"><div><strong class="font-display text-2xl text-white">3</strong><span class="mt-1 block text-xs text-white/45">Ana ürün grubu</span></div><div class="border-x border-white/10 px-5"><strong class="font-display text-2xl text-white">Net</strong><span class="mt-1 block text-xs text-white/45">Kapsam karşılaştırması</span></div><div class="pl-5"><strong class="font-display text-2xl text-white">Hızlı</strong><span class="mt-1 block text-xs text-white/45">WhatsApp dönüşü</span></div></div>
-          <div class="mt-6 flex flex-wrap gap-2.5"><span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-2 text-xs font-semibold text-white/70"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#54D9BA" stroke-width="2.5" class="shrink-0"><path d="M20 6L9 17l-5-5"/></svg>13 şirketi karşılaştırıyoruz, en uygun teklifi buluyoruz</span><span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-2 text-xs font-semibold text-white/70"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#54D9BA" stroke-width="2" class="shrink-0"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>7/24 hasar desteği — sağlık, araç, konut, işyeri</span></div>
         </div>
         <div class="reveal relative min-h-[500px]">
           <div class="sticker absolute -left-3 -top-3 z-10 rotate-[-6deg] rounded-2xl bg-gold px-4 py-2.5 text-forest-950 shadow-xl sm:-left-5 sm:-top-5">
